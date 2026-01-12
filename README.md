@@ -1,151 +1,209 @@
+# 🍔 Zo-moto — Food Delivery App
 
-# Zo-moto - Food Delivery App
+> **Zo-moto** is a modern, full‑featured food delivery web application inspired by real‑world platforms like Zomato & Swiggy. Built with **React, TypeScript, and Supabase**, it delivers a smooth user experience, real‑time updates, AI assistance, and a powerful admin dashboard.
 
-A modern, full-featured food delivery application built with React, TypeScript, and Supabase. Zo-moto allows users to browse restaurants, order food, manage carts, and interact with an AI chatbot, while providing admins with comprehensive management tools.
+🌐 **Live Demo:** 👉 **[https://zomotokhushi.netlify.app/](https://zomotokhushi.netlify.app/)**
+
+---
+
+## ✨ Why Zo-moto?
+
+* ⚡ Fast, scalable, and production‑ready architecture
+* 🤖 AI‑powered chatbot for smarter user interaction
+* 📊 Full admin control with analytics & order tracking
+* 🎨 Clean, responsive UI with dark/light mode
+* 🔐 Secure authentication & real‑time backend
+
+---
 
 ## 🚀 Features
 
-### User Panel
-- **User Authentication**: Secure login and registration with Supabase Auth
-- **Restaurant Browsing**: Explore restaurants by categories with filtering options
-- **Menu Management**: View detailed menu items with prices, descriptions, and images
-- **Shopping Cart**: Add, remove, and update items in the cart with real-time totals
-- **Checkout Process**: Seamless checkout with address selection and order summary
-- **Order History**: Track past orders and order status
-- **User Profile**: Manage personal information and addresses
-- **Location Services**: Set delivery location (currently set to India)
+### 👤 User Panel
 
-### Admin Panel
-- **Dashboard**: Overview of orders, users, and restaurants
-- **Restaurant Management**: Add, edit, and delete restaurants
-- **Menu Management**: Manage menu items for each restaurant
-- **Order Management**: View and update order statuses
-- **User Management**: Administer user accounts
-- **Analytics**: Monitor app performance and metrics
+* 🔐 **Authentication** — Secure login & signup using Supabase Auth
+* 🍽️ **Restaurant Discovery** — Browse restaurants by category & filters
+* 📋 **Menu Exploration** — Detailed menus with images, prices & descriptions
+* 🛒 **Smart Cart** — Add, remove, update items with live total calculation
+* 💳 **Checkout Flow** — Address selection & order summary
+* 📦 **Order Tracking** — View order history & real‑time order status
+* 👤 **Profile Management** — Manage personal info & delivery addresses
+* 📍 **Location Support** — Delivery location support (India‑based)
 
-### AI Chatbot
-- **Intelligent Assistance**: AI-powered chatbot for order help, recommendations, and support
-- **Contextual Responses**: Provides relevant information based on user queries
-- **Order Tracking**: Help users track their orders via chat
-- **Restaurant Recommendations**: Suggest restaurants based on preferences
+---
 
-### Additional Features
-- **Responsive Design**: Fully responsive UI built with Tailwind CSS and shadcn/ui
-- **Real-time Updates**: Live updates for cart and order status
-- **Secure Payments**: Integrated payment processing (placeholder for now)
-- **Push Notifications**: Notification system for order updates
-- **Dark/Light Mode**: Theme switching capability
+### 🛠️ Admin Panel
+
+* 📊 **Dashboard Overview** — Orders, users & restaurants at a glance
+* 🏪 **Restaurant Management** — Add, edit & delete restaurants
+* 🍕 **Menu Control** — Create & manage menu items per restaurant
+* 🚚 **Order Handling** — Update order statuses in real time
+* 👥 **User Management** — Monitor & manage user accounts
+* 📈 **Analytics** — Performance metrics & growth insights
+
+---
+
+### 🤖 AI Chatbot
+
+* 💬 **Smart Assistance** — Order help, FAQs & support
+* 🧠 **Context‑Aware Responses** — Personalized replies based on user queries
+* 📦 **Order Status via Chat** — Track orders directly from chatbot
+* 🍽️ **Recommendations** — Suggest restaurants based on preferences
+
+---
+
+### 🌟 Extra Goodies
+
+* 📱 Fully **Responsive Design** (Mobile‑first)
+* ⚡ **Real‑time Updates** (Cart & Orders)
+* 🔔 **Notifications System** for order updates
+* 🌙 **Dark / Light Mode Toggle**
+* 💳 **Payment Integration Ready** (Placeholder)
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React, TypeScript, Vite
-- **Styling**: Tailwind CSS, shadcn/ui components
-- **Backend**: Supabase (Database, Auth, Real-time)
-- **State Management**: React Context API
-- **Routing**: React Router
-- **Icons**: Lucide React
-- **Build Tool**: Vite
-- **Package Manager**: npm/bun
+| Layer           | Tech                          |
+| --------------- | ----------------------------- |
+| Frontend        | React, TypeScript, Vite       |
+| Styling         | Tailwind CSS, shadcn/ui       |
+| Backend         | Supabase (DB, Auth, Realtime) |
+| State           | React Context API             |
+| Routing         | React Router                  |
+| Icons           | Lucide React                  |
+| Package Manager | npm / bun                     |
 
-## 📋 Prerequisites
+---
 
-- Node.js (v18 or higher)
-- npm or bun
-- Supabase account (for backend services)
+## 📦 Prerequisites
 
-## 🚀 Installation
+* Node.js **v18+**
+* npm or bun
+* Supabase account
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Khushi-Kamboj/Zo-moto.git
-   cd Zo-moto
-   ```
+---
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   bun install
-   ```
+## 🚀 Installation & Setup
 
-3. **Environment Setup**
-   - Copy `.env.example` to `.env`
-   - Fill in your Supabase credentials:
-     ```
-     VITE_SUPABASE_URL=your_supabase_url
-     VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-     ```
+### 1️⃣ Clone the repository
 
-4. **Database Setup**
-   - Run the Supabase migrations in the `supabase/migrations` folder
-   - Or set up your Supabase project and run the SQL files
+```bash
+git clone https://github.com/Khushi-Kamboj/Zo-moto.git
+cd Zo-moto
+```
 
-5. **Start the development server**
-   ```bash
-   npm run dev
-   # or
-   bun run dev
-   ```
+### 2️⃣ Install dependencies
 
-6. **Open your browser**
-   - Navigate to `http://localhost:8080`
+```bash
+npm install
+# or
+bun install
+```
 
-## 📖 Usage
+### 3️⃣ Environment Variables
 
-### For Users
-1. **Sign Up/Login**: Create an account or log in
-2. **Browse Restaurants**: Explore available restaurants and menus
-3. **Add to Cart**: Select items and add them to your cart
-4. **Checkout**: Provide delivery address and complete payment
-5. **Track Orders**: Monitor your order status
-6. **Use Chatbot**: Get help with orders or recommendations
+Create a `.env` file using `.env.example`
 
-### For Admins
-1. **Access Admin Panel**: Log in with admin credentials
-2. **Manage Restaurants**: Add/edit restaurant information
-3. **Update Menus**: Modify menu items and prices
-4. **Handle Orders**: Process and update order statuses
-5. **User Management**: View and manage user accounts
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+### 4️⃣ Database Setup
+
+* Run Supabase migrations from `supabase/migrations`
+* OR manually execute SQL files in Supabase dashboard
+
+### 5️⃣ Start Development Server
+
+```bash
+npm run dev
+# or
+bun run dev
+```
+
+🌐 Open **[http://localhost:8080](http://localhost:8080)** in your browser
+
+---
+
+## 📖 How to Use
+
+### 🙋 For Users
+
+1. Sign up or log in
+2. Browse restaurants & menus
+3. Add items to cart
+4. Checkout with address
+5. Track orders in real time
+6. Use AI chatbot for help
+
+### 🧑‍💼 For Admins
+
+1. Log in with admin credentials
+2. Manage restaurants & menus
+3. Process orders
+4. Monitor users & analytics
+
+---
 
 ## 🏗️ Project Structure
 
 ```
 src/
 ├── components/
-│   ├── ui/           # Reusable UI components (shadcn/ui)
-│   ├── layout/       # Layout components (Header, etc.)
-│   ├── home/         # Home page components
-│   ├── menu/         # Menu-related components
-│   ├── cart/         # Cart components
-│   ├── checkout/     # Checkout components
-│   ├── auth/         # Authentication components
-│   ├── chat/         # Chatbot components
-│   └── admin/        # Admin panel components
-├── pages/            # Page components
-├── hooks/            # Custom React hooks
-├── context/          # React context providers
-├── lib/              # Utility functions
-├── types/            # TypeScript type definitions
-└── data/             # Mock data (for development)
+│   ├── ui/           # shadcn/ui components
+│   ├── layout/       # Header, Footer, etc.
+│   ├── home/         # Home page
+│   ├── menu/         # Menu components
+│   ├── cart/         # Cart logic
+│   ├── checkout/     # Checkout flow
+│   ├── auth/         # Authentication
+│   ├── chat/         # AI Chatbot
+│   └── admin/        # Admin panel
+├── pages/            # Route pages
+├── hooks/            # Custom hooks
+├── context/          # Global state
+├── lib/              # Utilities
+├── types/            # TypeScript types
+└── data/             # Mock data
 ```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-[Supabase](https://supabase.com)
-
-## 📞 Support
-
-For support, email support@zo-moto.com or join our Discord community.
 
 ---
 
-Made with ❤️ for food lovers everywhere!
+## 🤝 Contributing
+
+Contributions are welcome! 🚀
+
+1. Fork the repo
+2. Create a feature branch
+
+```bash
+git checkout -b feature/amazing-feature
+```
+
+3. Commit changes
+
+```bash
+git commit -m "Add amazing feature"
+```
+
+4. Push & open a PR 🎉
+
+---
+
+## 📜 License
+
+Licensed under the **MIT License**
+
+---
+
+## 📞 Support
+
+📧 Email: **[support@zo-moto.com](mailto:support@zo-moto.com)**
+💬 Discord: Coming soon!
+
+---
+
+### ❤️ Built with passion by Khushi
+
+**Happy Coding & Happy
